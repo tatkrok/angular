@@ -11,15 +11,15 @@ export class BoxComponent {
 
   title: string = 'box';
 
-  @Output() boxContentEvent = new EventEmitter<any>();
-  @Output() boxSubtitleEvent = new EventEmitter<any>();
+  @Output() boxContentEvent = new EventEmitter<number | string>();
+  @Output() boxSubtitleEvent = new EventEmitter<string>();
 
   sendContentToParent() {
     this.boxContentEvent.emit(this.content);
   }
 
   sendSubtitleToParent() {
-    this.boxSubtitleEvent.emit(this.content);
+    this.boxSubtitleEvent.emit(this.subtitle);
   }
 
   onBoxClick() {
