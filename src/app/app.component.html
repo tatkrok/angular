@@ -1,0 +1,18 @@
+<app-box
+  [content]="'Input for box 1'"
+  [subtitle]="'Subtitle content'"
+  (boxContentEvent)="receiveContentFromChild($event)"
+  (boxSubtitleEvent)="receiveSubtitleFromChild($event)"
+></app-box>
+<app-box
+  [content]="'Input for box 2'"
+  [subtitle]="'Subtitle content'"
+  (boxContentEvent)="receiveContentFromChild($event)"
+  (boxSubtitleEvent)="receiveSubtitleFromChild($event)"
+></app-box>
+<app-box
+  [content]="3"
+  [subtitle]="'5'"
+  (boxContentEvent)="receiveContentFromChild($event)"
+  (boxSubtitleEvent)="receiveSubtitleFromChild($event)"
+></app-box>
