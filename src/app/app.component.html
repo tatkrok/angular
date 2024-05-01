@@ -1,12 +1,12 @@
 <app-box
-  [content]="'Input for box 1'"
-  [subtitle]="'Subtitle content'"
+  [content]="boxes[0].content"
+  [subtitle]="boxes[0].subtitle"
   (boxContentEvent)="receiveContentFromChild($event)"
   (boxSubtitleEvent)="receiveSubtitleFromChild($event)"
 ></app-box>
 <app-box
-  [content]="'Input for box 2'"
-  [subtitle]="'Subtitle content'"
+  [content]="boxes[1].content"
+  [subtitle]="boxes[1].subtitle"
   (boxContentEvent)="receiveContentFromChild($event)"
   (boxSubtitleEvent)="receiveSubtitleFromChild($event)"
 ></app-box>
