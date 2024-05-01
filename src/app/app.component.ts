@@ -34,22 +34,25 @@ export class AppComponent {
     {
       content: 'Box 1 content',
       subtitle: 'Box 1 subtitle',
+      visible: true,
     },
     {
       content: 'Box 2 content',
       subtitle: 'Box 2 subtitle',
+      visible: false,
     },
     {
       content: 'Box 3 content',
       subtitle: 'Box 3 subtitle',
+      visible: true,
     },
   ];
 
   constructor() {
-    console.log(this.numbers2[1])
-    console.log(this.boxes)               // array
-    console.log(this.boxes[0])            // object
-    console.log(this.boxes[0].content)    // string
+    console.log(this.numbers2[1]);
+    console.log(this.boxes); // array
+    console.log(this.boxes[0]); // object
+    console.log(this.boxes[0].content); // string
     this.print();
   }
 
