@@ -16,3 +16,9 @@
   (boxContentEvent)="receiveContentFromChild($event)"
   (boxSubtitleEvent)="receiveSubtitleFromChild($event)"
 ></app-box>
+
+<app-circle
+  [main]="'Input for Circle'"
+  [subs]="'Subtitle for Circle'"
+  (circleMainEvent)="receiveMainFromChild($event)"
+></app-circle>
