@@ -8,9 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BoxComponent } from './box/box.component';
 import { CircleComponent } from './circle/circle.component';
+import { TriangleComponent } from './triangle/triangle.component';
 
 @NgModule({
-  declarations: [AppComponent, BoxComponent, CircleComponent],
+  declarations: [AppComponent, BoxComponent, CircleComponent, TriangleComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],

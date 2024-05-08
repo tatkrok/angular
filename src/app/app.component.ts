@@ -48,6 +48,42 @@ export class AppComponent {
     },
   ];
 
+  circles: any[] = [
+    {
+      main: 'circle 1 main',
+      subs: 'circle 1 subs',
+      visible: true,
+    },
+    {
+      main: 'circle 2 main',
+      subs: 'circle 2 subs',
+      visible: false,
+    },
+    {
+      main: 'circle 3 main',
+      subs: 'circle 3 subs',
+      visible: true,
+    },
+  ];
+
+  triangles: any[] = [
+    {
+      menu: 'triangle 1 menu',
+      subtitles: 'triangle 1 subtitles',
+      visible: true,
+    },
+    {
+      menu: 'triangle  2 main',
+      subtitles: 'triangle  2 subtitles',
+      visible: false,
+    },
+    {
+      menu: 'triangle 3 main',
+      subtitles: 'triangle 3 subtitles',
+      visible: true,
+    },
+  ];
+
   constructor() {
     console.log(this.numbers2[1]);
     console.log(this.boxes); // array
@@ -74,5 +110,13 @@ export class AppComponent {
 
   receiveSubsFromChild(subs: any) {
     console.log('subs received from child', subs);
+  }
+
+  receiveMenuFromChild(menu: any) {
+    console.log('menu received from child', menu);
+  }
+
+  receiveSubtitlesFromChild(subtitles: any) {
+    console.log('subtitles received from child', subtitles);
   }
 }

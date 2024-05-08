@@ -7,9 +7,21 @@
     (boxSubtitleEvent)="receiveSubtitleFromChild($event)"
   ></app-box>
 </div>
-
-<app-circle
-  [main]="'Input for Circle'"
-  [subs]="'Subtitle for Circle'"
-  (circleMainEvent)="receiveMainFromChild($event)"
-></app-circle>
+<div class="circle-list" *ngFor="let circle of circles">
+  <app-circle
+    *ngIf="circle.visible"
+    [main]="'Input for Circle'"
+    [subs]="'Subtitle for Circle'"
+    (circleMainEvent)="receiveMainFromChild($event)"
+    (CircleSubsEvent)="receiveSubsFromChild($event)"
+  ></app-circle>
+</div>
+<div class="triangle-list" *ngFor="let triangle of triangles">
+  <app-triangle
+    *ngIf="triangle.visible"
+    [menu]="'Input for Triangle'"
+    [subtitles]="'Subtitle for Triangle'"
+    (TriangleMenuEvent)="receiveMenuFromChild($event)"
+    (TriangleSubtitlesEvent)="receiveSubtitlesFromChild($event)"
+  ></app-triangle>
+</div>
