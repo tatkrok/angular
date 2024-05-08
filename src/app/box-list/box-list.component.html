@@ -1,0 +1,9 @@
+<div class="box-list" *ngFor="let box of boxes">
+  <app-box
+    *ngIf="box.visible"
+    [content]="box.content"
+    [subtitle]="box.subtitle"
+    (boxContentEvent)="receiveContentFromChild($event)"
+    (boxSubtitleEvent)="receiveSubtitleFromChild($event)"
+  ></app-box>
+</div>
