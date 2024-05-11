@@ -1,4 +1,11 @@
 <app-box-list></app-box-list>
 <app-circle-list></app-circle-list>
 <app-triangle-list></app-triangle-list>
-<button type="button" class="btn btn-primary">Primary</button>
+<div class="animal">
+  Animal: {{ animal }}
+</div>
+<div class="animal-btn">
+  <button type="button" (click)="changeAnimal('dog')" class="btn btn-primary">Dog</button>
+  <button type="button" (click)="changeAnimal('elephant')" class="btn btn-primary">Elephant</button>
+  <button type="button" (click)="changeAnimal('cat')" class="btn btn-primary">Cat</button>
+</div>

@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'angular';
+  animal: string = 'cat';
 
   numbersArray: number[] = [1, 2, 3];
+
+  changeAnimal(animal: string): void {
+    this.animal = animal;
+  }
+
 }
