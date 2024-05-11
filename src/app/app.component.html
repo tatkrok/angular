@@ -1,11 +1,3 @@
 <app-box-list></app-box-list>
 <app-circle-list></app-circle-list>
-<div class="triangle-list" *ngFor="let triangle of triangles">
-  <app-triangle
-    *ngIf="triangle.visible"
-    [menu]="'Input for Triangle'"
-    [subtitles]="'Subtitle for Triangle'"
-    (triangleMenuEvent)="receiveMenuFromChild($event)"
-    (TriangleSubtitlesEvent)="receiveSubtitlesFromChild($event)"
-  ></app-triangle>
-</div>
+<app-triangle-list></app-triangle-list>

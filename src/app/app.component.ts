@@ -30,33 +30,7 @@ export class AppComponent {
 
   numbers2: number[] = [1, 2, 3, 4, 5, 6];
 
-  triangles: any[] = [
-    {
-      menu: 'triangle 1 menu',
-      subtitles: 'triangle 1 subtitles',
-      visible: true,
-    },
-    {
-      menu: 'triangle  2 main',
-      subtitles: 'triangle  2 subtitles',
-      visible: false,
-    },
-    {
-      menu: 'triangle 3 main',
-      subtitles: 'triangle 3 subtitles',
-      visible: true,
-    },
-  ];
-
   print() {
     console.log(this.x);
-  }
-
-  receiveMenuFromChild(menu: any) {
-    console.log('menu received from child', menu);
-  }
-
-  receiveSubtitlesFromChild(subtitles: any) {
-    console.log('subtitles received from child', subtitles);
   }
 }
