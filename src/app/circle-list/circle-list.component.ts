@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-circle-list',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './circle-list.component.css',
 })
 export class CircleListComponent {
+  @Input() firstName: string = 'Tatiana';
+  @Input() lastName: string = 'Tsiouka';
   circles: any[] = [
     {
       main: 'circle 1 main',
