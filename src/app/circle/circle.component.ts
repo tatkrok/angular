@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class CircleComponent {
   @Input() main: string;
   @Input() subs: string;
+  @Input() animal: string;
   title: string = 'circle';
 
   @Output() CircleMainEvent = new EventEmitter<string>();

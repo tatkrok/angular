@@ -3,9 +3,9 @@
     *ngIf="circle.visible"
     [main]="'Input for Circle'"
     [subs]="'Subtitle for Circle'"
+    [animal]="animal"
     (circleMainEvent)="receiveMainFromChild($event)"
     (CircleSubsEvent)="receiveSubsFromChild($event)"
   ></app-circle>
 </div>
-
 <app-box [content]="firstName" [subtitle]="lastName"></app-box>

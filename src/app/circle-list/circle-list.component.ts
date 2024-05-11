@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class CircleListComponent {
   @Input() firstName: string = 'Tatiana';
   @Input() lastName: string = 'Tsiouka';
+  @Input() animal: string;
   circles: any[] = [
     {
       main: 'circle 1 main',
