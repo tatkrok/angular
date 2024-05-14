@@ -15,13 +15,13 @@ export class BoxListComponent {
     {
       content: 'Box 2 content',
       subtitle: 'Box 2 subtitle',
-      visible: false,
+      visible: true,
     },
     {
       content: 'Box 3 content',
       subtitle: 'Box 3 subtitle',
       visible: true,
-    },
+    }
   ];
 
   receiveContentFromChild(content: any) {
