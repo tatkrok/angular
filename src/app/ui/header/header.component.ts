@@ -7,11 +7,11 @@ import { BehaviorSubject, Observable } from 'rxjs';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  selectedMenuSubject: BehaviorSubject<string> = new BehaviorSubject('Home');
-  selectedMenu$: Observable<string> = this.selectedMenuSubject.asObservable();
+  selectedMenuNameSubject: BehaviorSubject<string> = new BehaviorSubject('Home');
+  selectedMenuName$: Observable<string> = this.selectedMenuNameSubject.asObservable();
 
-  changeSelectedMenu(selectedMenu: string): void {
-    this.selectedMenuSubject.next(selectedMenu);
+  changeSelectedMenu(selectedMenuName: string): void {
+    this.selectedMenuNameSubject.next(selectedMenuName);
   }
 
 }
