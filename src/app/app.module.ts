@@ -12,9 +12,13 @@ import { TriangleComponent } from './triangle/triangle.component';
 import { CircleListComponent } from './circle-list/circle-list.component';
 import { BoxListComponent } from './box-list/box-list.component';
 import { TriangleListComponent } from './triangle-list/triangle-list.component';
+import { HeaderComponent } from './ui/header/header.component';
+import { FooterComponent } from './ui/footer/footer.component';
+import { MainContentComponent } from './ui/main-content/main-content.component';
+import { IntroductionComponent } from './ui/main-content/introduction/introduction.component';
 
 @NgModule({
-  declarations: [AppComponent, BoxComponent, CircleComponent, TriangleComponent, CircleListComponent, BoxListComponent, TriangleListComponent],
+  declarations: [AppComponent, BoxComponent, CircleComponent, TriangleComponent, CircleListComponent, BoxListComponent, TriangleListComponent, HeaderComponent, FooterComponent, MainContentComponent, IntroductionComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
