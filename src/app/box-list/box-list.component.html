@@ -1,11 +1,14 @@
 <div class="box-list row">
-  <div *ngFor="let box of boxes" class="box col-4">
-      <app-box
-        *ngIf="box.visible"
-        [content]="box.content"
-        [subtitle]="box.subtitle"
-        (boxContentEvent)="receiveContentFromChild($event)"
-        (boxSubtitleEvent)="receiveSubtitleFromChild($event)"
-      ></app-box>
+  <div
+    *ngFor="let box of boxes"
+    class="box col-3 row align-items-center m-2 w-40"
+  >
+    <app-box
+      *ngIf="box.visible"
+      [content]="box.content"
+      [subtitle]="box.subtitle"
+      (boxContentEvent)="receiveContentFromChild($event)"
+      (boxSubtitleEvent)="receiveSubtitleFromChild($event)"
+    ></app-box>
   </div>
 </div>

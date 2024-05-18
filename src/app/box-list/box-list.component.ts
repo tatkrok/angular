@@ -21,7 +21,7 @@ export class BoxListComponent {
       content: 'Box 3 content',
       subtitle: 'Box 3 subtitle',
       visible: true,
-    }
+    },
   ];
 
   receiveContentFromChild(content: any) {

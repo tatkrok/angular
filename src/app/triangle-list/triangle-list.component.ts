@@ -15,7 +15,7 @@ export class TriangleListComponent {
     {
       menu: 'triangle  2 main',
       subtitles: 'triangle  2 subtitles',
-      visible: false,
+      visible: true,
     },
     {
       menu: 'triangle 3 main',

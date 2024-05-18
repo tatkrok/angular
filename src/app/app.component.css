@@ -1,3 +1,15 @@
-.custom-btn {
-  width: 100px;
+.animal {
+  background-color: bisque;
+  font-weight: var(--fw-regular);
+  text-align: center;
+  width: 240px;
+  border-radius: 3%;
+}
+.btn {
+  width: 110px;
+}
+.col {
+  background-color: bisque;
+  text-align: center;
+  border-radius: 3%;
 }

@@ -1,12 +1,4 @@
 .container {
-  border: 1px solid rgb(123, 68, 128);
-  border-radius: 100%;
-  margin: 5%;
-  padding: 2%;
-  width: 70px;
-  height: 100px;
-}
-.circle {
-  text-align: center;
-  padding: 1;
+  background-color: rgb(118, 246, 250);
+  border-radius: 3%;
 }

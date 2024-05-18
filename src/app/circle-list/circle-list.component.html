@@ -1,11 +1,23 @@
-<div class="circle-list" *ngFor="let circle of circles">
-  <app-circle
-    *ngIf="circle.visible"
-    [main]="'Input for Circle'"
-    [subs]="'Subtitle for Circle'"
-    [animal]="animal"
-    (circleMainEvent)="receiveMainFromChild($event)"
-    (CircleSubsEvent)="receiveSubsFromChild($event)"
-  ></app-circle>
+<div class="circle-list row">
+  <div
+    *ngFor="let circle of circles"
+    class="circle col-3 row align-items-center m-2 w-40"
+  >
+    <app-circle
+      *ngIf="circle.visible"
+      [main]="'Input for Circle'"
+      [subs]="'Subtitle for Circle'"
+      [animal]="animal"
+      (circleMainEvent)="receiveMainFromChild($event)"
+      (CircleSubsEvent)="receiveSubsFromChild($event)"
+    ></app-circle>
+  </div>
 </div>
-<app-box [content]="firstName" [subtitle]="lastName"></app-box>
+<div class="circle-secondary row">
+  <div class="circle col-3 row align-items-center m-2 w-40">
+    <app-box [content]="firstName" [subtitle]="lastName"></app-box>
+  </div>
+  <div class="circle col-6 row align-items-center m-2 w-40">
+    <app-box [content]="firstName" [subtitle]="lastName"></app-box>
+  </div>
+</div>

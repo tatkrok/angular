@@ -18,7 +18,7 @@ export class CircleListComponent {
     {
       main: 'circle 2 main',
       subs: 'circle 2 subs',
-      visible: false,
+      visible: true,
     },
     {
       main: 'circle 3 main',
