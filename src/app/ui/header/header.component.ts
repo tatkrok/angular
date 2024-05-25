@@ -15,11 +15,17 @@ export class HeaderComponent {
     this.x = selectedMenuName;
   }
 
-  changeSelectedNumber(selectedNumber: number) {
-    this.y = selectedNumber;
+  changeSelectedNumber(selectedNumber: number): void {
+    this.y = this.calculateNumberPlusOne(selectedNumber);
   }
 
-  changeSelectedBoolean(selectedBoolean: boolean) {
+  changeSelectedBoolean(selectedBoolean: boolean): void {
     this.z = selectedBoolean;
   }
+
+  calculateNumberPlusOne(selectedNumber: number): number {
+    selectedNumber = selectedNumber + 1;
+    return selectedNumber;
+  }
+
 }
