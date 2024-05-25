@@ -4,14 +4,22 @@ import { BehaviorSubject, Observable } from 'rxjs';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  selectedMenuNameSubject: BehaviorSubject<string> = new BehaviorSubject('Home');
-  selectedMenuName$: Observable<string> = this.selectedMenuNameSubject.asObservable();
+  x: string = 'Home';
+  y: number = 1;
+  z: boolean = true;
 
   changeSelectedMenu(selectedMenuName: string): void {
-    this.selectedMenuNameSubject.next(selectedMenuName);
+    this.x = selectedMenuName;
   }
 
+  changeSelectedNumber(selectedNumber: number) {
+    this.y = selectedNumber;
+  }
+
+  changeSelectedBoolean(selectedBoolean: boolean) {
+    this.z = selectedBoolean;
+  }
 }
