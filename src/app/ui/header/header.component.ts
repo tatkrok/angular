@@ -8,11 +8,16 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class HeaderComponent {
   x: string = 'Home';
+  i: string = 'Home';
   y: number = 1;
   z: boolean = true;
 
   changeSelectedMenu(selectedMenuName: string): void {
     this.x = selectedMenuName;
+  }
+
+  selectedMenuName(selectedMenuName: string): void {
+    this.i = selectedMenuName;
   }
 
   changeSelectedNumber(selectedNumber: number): void {
@@ -27,5 +32,4 @@ export class HeaderComponent {
     selectedNumber = selectedNumber + 1;
     return selectedNumber;
   }
-
 }
