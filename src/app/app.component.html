@@ -1,9 +1,12 @@
 <button (click)="changeDay('Tuesday')">Tuesday</button>
 <button (click)="changeDay('Wednesday')">Wednesday</button>
 <button (click)="changeDay('Saturday')">Saturday</button>
+<button (click)="changeDayStatus('Kalimera')">Kalimera</button>
+<button (click)="changeDayStatus('Kalispera')">Kalispera</button>
+<button (click)="changeDayStatus('Kalinyxta')">Kalinyxta</button>
 <div class="row m-0 p-0">
   <div class="col-12 m-0 p-0">
-    <app-header [day]="day"></app-header>
+    <app-header [day]="day" [dayStatus]="dayStatus2"></app-header>
   </div>
 </div>
 <div class="row m-0 p-0">

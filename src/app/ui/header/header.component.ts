@@ -8,6 +8,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class HeaderComponent implements OnChanges {
   @Input() day: string;
+  @Input() dayStatus: string;
   x: string = 'Home';
   i: string = 'Home';
   y: number = 1;
@@ -15,7 +16,10 @@ export class HeaderComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (this.day === 'Saturday') {
-      console.log('Op, exeis mathima 11-1.')
+      console.log('Op, exeis mathima 11-1.');
+    }
+    if (this.dayStatus === 'Kalinyxta') {
+      console.log('ora gia ypno');
     }
   }
 
