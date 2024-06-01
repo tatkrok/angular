@@ -1,20 +1,34 @@
-const mobile: any = {
-  brand: 'Apple',
-  screen: '6.1',
-  ram: '4GB',
-  cameraFront: '16mp',
-  cameraBack: '32mp',
-  cost: 800
-}
-
-const office: any = {
+const office: Office = {
   monitors: [
     { size: '24px', brand: 'Dell', microphoneAvailable: true },
-    { size: '32px', brand: 'Samsung', microphoneAvailable: false }
+    { size: '32px', brand: 'Samsung', microphoneAvailable: false },
   ],
   mouse: { brand: 'Logitech', isAnatomic: true },
   keyboard: { brand: 'Logitech', isMechanic: false },
   hasCamera: true,
+};
+
+export interface Office {
+  monitors: Monitors[];
+  mouse: Mouse;
+  keyboard: Keyboard;
+  hasCamera: boolean;
+}
+
+export interface Monitors {
+  size: string;
+  brand: string;
+  microphoneAvailable: boolean;
+}
+
+export interface Mouse {
+  brand: string;
+  isAnatomic: boolean;
+}
+
+export interface Keyboard {
+  brand: string;
+  isMechanic: boolean;
 }
 
 // Thelw stis parapanw 2 metavlites na pas kai na moy ftiaxeis Interface.
