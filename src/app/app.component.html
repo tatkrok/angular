@@ -1,6 +1,9 @@
+<button (click)="changeDay('Tuesday')">Tuesday</button>
+<button (click)="changeDay('Wednesday')">Wednesday</button>
+<button (click)="changeDay('Saturday')">Saturday</button>
 <div class="row m-0 p-0">
   <div class="col-12 m-0 p-0">
-    <app-header></app-header>
+    <app-header [day]="day"></app-header>
   </div>
 </div>
 <div class="row m-0 p-0">

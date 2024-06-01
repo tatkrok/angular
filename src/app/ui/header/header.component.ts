@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Component({
@@ -6,11 +6,18 @@ import { BehaviorSubject, Observable } from 'rxjs';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnChanges {
+  @Input() day: string;
   x: string = 'Home';
   i: string = 'Home';
   y: number = 1;
   z: boolean = true;
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (this.day === 'Saturday') {
+      console.log('Op, exeis mathima 11-1.')
+    }
+  }
 
   changeSelectedMenu(selectedMenuName: string): void {
     this.x = selectedMenuName;
