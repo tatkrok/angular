@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-box-list',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './box-list.component.css',
 })
 export class BoxListComponent {
+  clickedBoxContent: string;
+
   boxes: any[] = [
     {
       content: 'Box 1 content',
@@ -23,6 +25,13 @@ export class BoxListComponent {
       visible: true,
     },
   ];
+
+  boxClicked(box: any) {
+    this.clickedBoxContent = box.content;
+    // setTimeout(() => {
+    //   this.clickedBoxContent = 'Ciao'
+    // }, 3000);
+  }
 
   receiveContentFromChild(content: any) {
     console.log('Content received from child', content);

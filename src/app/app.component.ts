@@ -11,11 +11,11 @@ export class AppComponent implements OnInit {
   dayStatus2: string = 'Kalimera';
 
   constructor() {
-    console.log('constructor App component called');
+    // console.log('constructor App component called');
   }
 
   ngOnInit(): void {
-    console.log('ngOnInit App component called');
+    // console.log('ngOnInit App component called');
   }
   // Lifecycle hooks
   // OnInit(), OnChanges(), AfterViewInit(), OnDestroy()
