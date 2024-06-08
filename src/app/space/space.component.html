@@ -1,0 +1,27 @@
+<div class="space-container">
+  <div class="row">
+    <div class="col-12">selected planet:</div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <app-planet [planetName]="'Mars'"></app-planet>
+    </div>
+    <div class="col-3">
+      <app-planet [planetName]="'Earth'"></app-planet>
+    </div>
+    <div class="col-3">
+      <div
+        class="planet d-flex align-items-center justify-content-center rounded-circle bg-dark text-white"
+      >
+        {{ planetNepton }}
+      </div>
+    </div>
+    <div class="col-3">
+      <div
+        class="planet d-flex align-items-center justify-content-center rounded-circle bg-dark text-white"
+      >
+        {{ planetMercury }}
+      </div>
+    </div>
+  </div>
+</div>

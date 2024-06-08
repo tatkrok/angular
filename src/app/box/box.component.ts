@@ -1,4 +1,12 @@
-import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
 
 @Component({
   selector: 'app-box',
@@ -16,20 +24,19 @@ export class BoxComponent implements OnInit, OnChanges {
   @Output() boxSubtitleEvent = new EventEmitter<string>();
 
   constructor() {
-    console.log('constructor: Hello')
+    console.log('constructor: Hello');
   }
 
   ngOnInit(): void {
     // console.log('ngOnInit: Hello')
-    console.log('ngOnInit: KALESTIKE')
+    console.log('ngOnInit: KALESTIKE');
   }
 
   ngOnChanges(changes: SimpleChanges): void {
     // if (changes['content']) {
     //   console.log('allaxe to content')
     // }
-    console.log('ngOnChanges: KALESTIKE')
-
+    console.log('ngOnChanges: KALESTIKE');
   }
 
   sendContentToParent() {

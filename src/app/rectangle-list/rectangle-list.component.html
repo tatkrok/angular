@@ -1,0 +1,12 @@
+<div class="container">
+  <div *ngFor="let rectangle of rectangles">
+    <app-rectangle
+      *ngIf="rectangle.visible"
+      [main]="'main '"
+      [subs]="'subs'"
+      (rectangleMainEvent)="recieveMainEventFromChild($event)"
+      (rectangleSubsEvent)="recieveSubsEventFromChild($event)"
+    >
+    </app-rectangle>
+  </div>
+</div>

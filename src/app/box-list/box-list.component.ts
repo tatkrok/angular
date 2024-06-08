@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Boxes } from './box-list.interface';
 
 @Component({
   selector: 'app-box-list',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class BoxListComponent {
   clickedBoxContent: string;
 
-  boxes: any[] = [
+  boxes: Boxes[] = [
     {
       content: 'Box 1 content',
       subtitle: 'Box 1 subtitle',
