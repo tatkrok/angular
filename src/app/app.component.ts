@@ -17,8 +17,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     // console.log('ngOnInit App component called');
   }
-  // Lifecycle hooks
-  // OnInit(), OnChanges(), AfterViewInit(), OnDestroy()
 
   changeDay(day: string): void {
     this.day = day;

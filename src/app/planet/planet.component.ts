@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-planet',
@@ -8,10 +8,7 @@ import { Component, Input } from '@angular/core';
 export class PlanetComponent {
   @Input() planetName: string;
 
-  constructor() {
-    console.log('shgds');
-  }
-  onPlanetClick(planetName: string): void {
+  planetClicked(planetName: string): void {
     console.log(planetName);
   }
 }
