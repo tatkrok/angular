@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-planet',
@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PlanetComponent {
   @Input() planetName: string;
 
-  planetClicked(planetName: string): void {
+  planetClick(planetName: string): void {
     console.log(planetName);
   }
 }

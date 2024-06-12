@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './space.component.css',
 })
 export class SpaceComponent {
+  planetMars: string = 'Mars';
   planetEarth: string = 'Earth';
-  planetNepton: string = 'Nepton';
-  planetMercury: string = 'Mercury;';
+  planetNeptune: string = 'Neptune';
+  planetMercury: string = 'Mercury';
+  planetVenus: string = 'Venus';
+  planetJupiter: string = 'Jupiter';
+  planetPluto: string = 'Pluto';
+  planetEris: string = 'Eris';
 }
