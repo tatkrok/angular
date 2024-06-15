@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-space',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './space.component.css',
 })
 export class SpaceComponent {
+  @Input() selectedPlanet: string = '_'; //to Input xreiazeai edo? pote xrisimopoioyme input. grapta.
   planets: string[] = [
     'Mars',
     'Earth',
@@ -42,4 +43,10 @@ export class SpaceComponent {
       console.log(meteorite);
     });
   }
+
+  changeSelectedPlanet(_planet: string) {
+    this.selectedPlanet = _planet;
+  }
 }
+//same gia meteorites.
+//na do gia input .
