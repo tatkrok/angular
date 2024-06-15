@@ -2,30 +2,14 @@
   <div class="row">
     <div class="col-12 p-3"></div>
   </div>
+  <!-- <div class="row" *ngFor="let arrayElement of ['Mars', 'Earth', 'Pluto']">
+    <div class="col">
+      Hi i am the new row {{ arrayElement }}
+    </div>
+  </div> -->
   <div class="row">
-    <div class="col">
-      <app-planet [planetName]="'Mars'"></app-planet>
-    </div>
-    <div class="col">
-      <app-planet [planetName]="'Neptune'"></app-planet>
-    </div>
-    <div class="col">
-      <app-planet [planetName]="'Earth'"></app-planet>
-    </div>
-    <div class="col">
-      <app-planet [planetName]="'Mercury'"></app-planet>
-    </div>
-    <div class="col">
-      <app-planet [planetName]="'Venus'"></app-planet>
-    </div>
-    <div class="col">
-      <app-planet [planetName]="'Jupiter'"></app-planet>
-    </div>
-    <div class="col">
-      <app-planet [planetName]="'Pluto'"></app-planet>
-    </div>
-    <div class="col">
-      <app-planet [planetName]="'Eris'"></app-planet>
+    <div class="col" *ngFor="let name of planets">
+      <app-planet [planetName]="name"></app-planet>
     </div>
   </div>
 
