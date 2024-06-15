@@ -18,15 +18,28 @@ export class SpaceComponent {
   ];
   meteorites: string[] = ['0', '1', '2', '3', '4', '5', '6', '7'];
 
-  constructor() { }
+  constructor() {
+    this.printPlanets();
+    this.printMeteorites();
+  }
 
   printPlanets(): void {
-    for (let i = 0; i <= this.planets.length; i++) {
+    for (let i = 0; i < this.planets.length; i++) {
       console.log(this.planets[i]);
     }
 
     this.planets.forEach((planet: string) => {
       console.log(planet);
+    });
+  }
+
+  printMeteorites(): void {
+    for (let i = 0; i < this.meteorites.length; i++) {
+      console.log(this.meteorites[i]);
+    }
+
+    this.meteorites.forEach((meteorite: string) => {
+      console.log(meteorite);
     });
   }
 }
