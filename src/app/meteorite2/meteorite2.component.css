@@ -1,0 +1,10 @@
+.meteorite-container {
+  background-color: blueviolet;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -450px;
+}
+.meteorite {
+  width: 100px;
+  height: 100px;
+}
