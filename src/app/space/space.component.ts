@@ -17,4 +17,16 @@ export class SpaceComponent {
     'Eris',
   ];
   meteorites: string[] = ['0', '1', '2', '3', '4', '5', '6', '7'];
+
+  constructor() { }
+
+  printPlanets(): void {
+    for (let i = 0; i <= this.planets.length; i++) {
+      console.log(this.planets[i]);
+    }
+
+    this.planets.forEach((planet: string) => {
+      console.log(planet);
+    });
+  }
 }
