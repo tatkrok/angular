@@ -2,46 +2,18 @@
   <div class="row">
     <div class="col-12 p-3"></div>
   </div>
-  <!-- <div class="row" *ngFor="let arrayElement of ['Mars', 'Earth', 'Pluto']">
-    <div class="col">
-      Hi i am the new row {{ arrayElement }}
-    </div>
-  </div> -->
   <div class="row">
-    <div class="col" *ngFor="let name of planets">
-      <app-planet [planetName]="name"></app-planet>
+    <div class="col" *ngFor="let planet of planets">
+      <app-planet [planetName]="planet"></app-planet>
     </div>
   </div>
 
   <div class="row">
     <div class="col-12 p-3"></div>
     <div class="row">
-      <div class="col">
-        <app-meteorite [meteorite]="'1'"></app-meteorite>
-      </div>
-      <div class="col">
-        <app-meteorite [meteorite]="'2'"></app-meteorite>
-      </div>
-      <div class="col">
-        <app-meteorite [meteorite]="'3'"></app-meteorite>
-      </div>
-      <div class="col">
-        <app-meteorite [meteorite]="'4'"></app-meteorite>
-      </div>
-      <div class="col">
-        <app-meteorite [meteorite]="'5'"></app-meteorite>
-      </div>
-      <div class="col">
-        <app-meteorite [meteorite]="'6'"></app-meteorite>
-      </div>
-      <div class="col">
-        <app-meteorite [meteorite]="'7'"></app-meteorite>
-      </div>
-      <div class="col">
-        <app-meteorite [meteorite]="'8'"></app-meteorite>
+      <div class="col" *ngFor="let meteorite of meteorites">
+        <app-meteorite [meteorite]="meteorite"></app-meteorite>
       </div>
     </div>
   </div>
 </div>
-
-

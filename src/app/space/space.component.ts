@@ -14,15 +14,7 @@ export class SpaceComponent {
     'Venus',
     'Jupiter',
     'Pluto',
-    'Eris'
+    'Eris',
   ];
-
-  meteorite1: number = 1;
-  meteorite2: number = 2;
-  meteorite3: number = 3;
-  meteorite4: number = 4;
-  meteorite5: number = 5;
-  meteorite6: number = 6;
-  meteorite7: number = 7;
-  meteorite8: number = 0;
+  meteorites: string[] = ['0', '1', '2', '3', '4', '5', '6', '7'];
 }
