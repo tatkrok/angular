@@ -8,11 +8,9 @@ import { Component, Input } from '@angular/core';
 export class MeteoriteComponent {
   @Input() meteorite: string;
 
-  constructor() {
-  }
+  constructor() {}
 
   meteoriteClick(meteorite: string): void {
     console.log(meteorite);
   }
-
 }

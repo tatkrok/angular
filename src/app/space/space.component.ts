@@ -6,7 +6,11 @@ import { Component, Input } from '@angular/core';
   styleUrl: './space.component.css',
 })
 export class SpaceComponent {
-  @Input() selectedPlanet: string = '_'; //to Input xreiazeai edo? pote xrisimopoioyme input. grapta.
+  selectedPlanet: string = '';
+  selectedMeteorite: string = '';
+
+  //to Input xreiazeai edo? pote xrisimopoioyme input.
+  //To xrisimopoioyme otan exoyme parent & child,ara edo einai axriasto.
   planets: string[] = [
     'Mars',
     'Earth',
@@ -47,6 +51,8 @@ export class SpaceComponent {
   changeSelectedPlanet(_planet: string) {
     this.selectedPlanet = _planet;
   }
+  changeSelectedMeteorite(meteorite: string) {
+    this.selectedMeteorite = meteorite;
+  }
 }
 //same gia meteorites.
-//na do gia input .
