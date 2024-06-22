@@ -2,27 +2,28 @@
   <div class="row">
     <div class="col">meteorite {{ selectedMeteorite }} clicked!</div>
     <div class="col">planet {{ selectedPlanet }} clicked!</div>
-    <div class="col">uni {{ selectedUni }}</div>
   </div>
   <div class="row">
-    <div
-      class="col"
-      *ngFor="let planet of planets"
-      (click)="changeSelectedPlanet(planet)"
-    >
-      <app-planet [planetName]="planet"></app-planet>
+    <div class="col" *ngFor="let planet of planets">
+      <app-planet
+        [planetName]="planet"
+        (planetClicked)="changeSelectedPlanet($event)"
+        [selectedMeteoriteName]="selectedMeteorite"
+      ></app-planet>
     </div>
   </div>
   <div class="row">
     <div class="col-12 p-3"></div>
     <div class="row">
-      <div
-        class="col"
-        *ngFor="let meteorite of meteorites"
-        (click)="changeSelectedMeteorite(meteorite)"
-      >
-        <app-meteorite [meteorite]="meteorite"></app-meteorite>
+      <div class="col" *ngFor="let meteorite of meteorites">
+        <app-meteorite
+          [meteorite]="meteorite"
+          (meteoriteClicked)="changeSelectedMeteorite($event)"
+          [selectedPlanetName]="selectedPlanet"
+        ></app-meteorite>
       </div>
     </div>
   </div>
 </div>
+
+<!-- dipla apo kathe meteoriti na fainetai to onoma tou epilegmenou planiti -->

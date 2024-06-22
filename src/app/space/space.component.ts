@@ -9,8 +9,6 @@ export class SpaceComponent {
   selectedPlanet: string = '';
   selectedMeteorite: string = '';
 
-  //to Input xreiazeai edo? pote xrisimopoioyme input.
-  //To xrisimopoioyme otan exoyme parent & child,ara edo einai axriasto.
   planets: string[] = [
     'Mars',
     'Earth',
@@ -48,11 +46,10 @@ export class SpaceComponent {
     });
   }
 
-  changeSelectedPlanet(_planet: string) {
+  changeSelectedPlanet(_planet: string): void {
     this.selectedPlanet = _planet;
   }
-  changeSelectedMeteorite(meteorite: string) {
+  changeSelectedMeteorite(meteorite: string): void {
     this.selectedMeteorite = meteorite;
   }
 }
-//same gia meteorites.

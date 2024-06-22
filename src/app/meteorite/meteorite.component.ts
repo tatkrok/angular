@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-meteorite',
@@ -7,10 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class MeteoriteComponent {
   @Input() meteorite: string;
+  @Output() meteoriteClicked: EventEmitter<string> = new EventEmitter<string>();
+  @Input() selectedPlanetName: string;
 
   constructor() {}
 
   meteoriteClick(meteorite: string): void {
-    console.log(meteorite);
+    this.meteoriteClicked.emit(meteorite);
   }
 }

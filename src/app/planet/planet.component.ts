@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-planet',
@@ -7,8 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class PlanetComponent {
   @Input() planetName: string;
+  @Output() planetClicked: EventEmitter<string> = new EventEmitter<string>();
+  @Input() selectedMeteoriteName: string;
 
   planetClick(planetName: string): void {
-    console.log(planetName);
+    this.planetClicked.emit(planetName);
   }
 }
