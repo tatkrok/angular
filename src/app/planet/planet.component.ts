@@ -1,4 +1,5 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { SharedService } from '../services/shared.service';
 
 @Component({
   selector: 'app-planet',
@@ -7,10 +8,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class PlanetComponent {
   @Input() planetName: string;
-  @Output() planetClicked: EventEmitter<string> = new EventEmitter<string>();
-  @Input() selectedMeteoriteName: string;
+
+  constructor(public sharedService: SharedService) { }
 
   planetClick(planetName: string): void {
-    this.planetClicked.emit(planetName);
+    this.sharedService.setSelectedPlanet(planetName);
   }
 }

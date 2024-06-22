@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { SharedService } from '../services/shared.service';
 
 @Component({
   selector: 'app-meteorite',
@@ -7,12 +8,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class MeteoriteComponent {
   @Input() meteorite: string;
-  @Output() meteoriteClicked: EventEmitter<string> = new EventEmitter<string>();
-  @Input() selectedPlanetName: string;
 
-  constructor() {}
+  constructor(public sharedService: SharedService) { }
 
   meteoriteClick(meteorite: string): void {
-    this.meteoriteClicked.emit(meteorite);
+    // this.meteoriteClicked.emit(meteorite);
   }
 }

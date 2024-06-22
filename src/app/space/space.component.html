@@ -7,8 +7,6 @@
     <div class="col" *ngFor="let planet of planets">
       <app-planet
         [planetName]="planet"
-        (planetClicked)="changeSelectedPlanet($event)"
-        [selectedMeteoriteName]="selectedMeteorite"
       ></app-planet>
     </div>
   </div>
@@ -18,8 +16,6 @@
       <div class="col" *ngFor="let meteorite of meteorites">
         <app-meteorite
           [meteorite]="meteorite"
-          (meteoriteClicked)="changeSelectedMeteorite($event)"
-          [selectedPlanetName]="selectedPlanet"
         ></app-meteorite>
       </div>
     </div>
