@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '../services/shared.service';
 
 @Component({
   selector: 'app-space',
@@ -21,7 +22,7 @@ export class SpaceComponent {
   ];
   meteorites: string[] = ['0', '1', '2', '3', '4', '5', '6', '7'];
 
-  constructor() {
+  constructor(public sharedService: SharedService) {
     this.printPlanets();
     this.printMeteorites();
   }

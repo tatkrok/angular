@@ -9,9 +9,10 @@ import { SharedService } from '../services/shared.service';
 export class MeteoriteComponent {
   @Input() meteorite: string;
 
-  constructor(public sharedService: SharedService) { }
+  constructor(public sharedService: SharedService) {}
 
   meteoriteClick(meteorite: string): void {
-    // this.meteoriteClicked.emit(meteorite);
+    this.sharedService.setSelectedMeteorite(meteorite);
   }
 }
+//ena 3o componentme onoma sun, ena kyklos. ota klikaro to planet-meteorite na emfanizontai ston ilio, anti gia to space poy einai tora. kitrinos ilios.

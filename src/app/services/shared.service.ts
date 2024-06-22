@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SharedService {
   selectedPlanet: string;
-  constructor() { }
+  selectedMeteorite: string;
+  constructor() {}
 
   setSelectedPlanet(planet: string): void {
     this.selectedPlanet = planet;
@@ -15,4 +16,11 @@ export class SharedService {
     return this.selectedPlanet;
   }
 
+  setSelectedMeteorite(meteorite: string): void {
+    this.selectedMeteorite = meteorite;
+  }
+
+  getSelectedMeteorite(): string {
+    return this.selectedMeteorite;
+  }
 }
