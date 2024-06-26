@@ -10,6 +10,7 @@ export class MoonComponent {
   constructor(public sharedService: SharedService) {}
 
   moonClick() {
+    this.sharedService.sayHello();
     this.sharedService.setMessage('Good Night!');
   }
 }

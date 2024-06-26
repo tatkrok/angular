@@ -10,6 +10,10 @@ export class SharedService {
 
   constructor() {}
 
+  sayHello(): void {
+    console.log('Hello');
+  }
+
   setMessage(message: string): void {
     this.message = message;
   }

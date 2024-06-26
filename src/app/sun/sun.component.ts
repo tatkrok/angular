@@ -10,6 +10,7 @@ export class SunComponent {
   constructor(public sharedService: SharedService) {}
 
   onSunClick(): void {
+    this.sharedService.sayHello();
     this.sharedService.setMessage('Good Morning!');
   }
 }
