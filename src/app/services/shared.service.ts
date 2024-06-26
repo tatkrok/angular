@@ -6,7 +6,17 @@ import { Injectable } from '@angular/core';
 export class SharedService {
   selectedPlanet: string;
   selectedMeteorite: string;
+  message: string;
+
   constructor() {}
+
+  setMessage(message: string): void {
+    this.message = message;
+  }
+
+  getMessage(): string {
+    return this.message;
+  }
 
   setSelectedPlanet(planet: string): void {
     this.selectedPlanet = planet;

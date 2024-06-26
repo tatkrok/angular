@@ -15,6 +15,7 @@ import { PlanetComponent } from './planet/planet.component';
 import { SpaceComponent } from './space/space.component';
 import { MeteoriteComponent } from './meteorite/meteorite.component';
 import { SunComponent } from './sun/sun.component';
+import { MoonComponent } from './moon/moon.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SunComponent } from './sun/sun.component';
     SpaceComponent,
     MeteoriteComponent,
     SunComponent,
+    MoonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],

@@ -1,5 +1,6 @@
 <div
   class="sun d-flex justify-content-center align-items-center rounded-circle"
+  (click)="onSunClick()"
 >
   planet: {{ sharedService.getSelectedPlanet() }} , meteorite :
   {{ sharedService.getSelectedMeteorite() }}

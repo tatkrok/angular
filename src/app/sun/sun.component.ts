@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class SunComponent {
   constructor(public sharedService: SharedService) {}
+
+  onSunClick(): void {
+    this.sharedService.setMessage('Good Morning!');
+  }
 }
