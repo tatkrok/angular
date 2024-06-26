@@ -15,4 +15,4 @@ export class MeteoriteComponent {
     this.sharedService.setSelectedMeteorite(meteorite);
   }
 }
-//ena 3o componentme onoma sun, ena kyklos. ota klikaro to planet-meteorite na emfanizontai ston ilio, anti gia to space poy einai tora. kitrinos ilios.
+//ena 3o component me onoma sun, ena kyklos. ota klikaro to planet-meteorite na emfanizontai ston ilio, anti gia to space poy einai tora. kitrinos ilios.

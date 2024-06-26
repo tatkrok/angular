@@ -21,6 +21,8 @@ export class SpaceComponent {
     'Eris',
   ];
   meteorites: string[] = ['0', '1', '2', '3', '4', '5', '6', '7'];
+  meteorite: string;
+  planet: string;
 
   constructor(public sharedService: SharedService) {
     this.printPlanets();
@@ -52,5 +54,14 @@ export class SpaceComponent {
   }
   changeSelectedMeteorite(meteorite: string): void {
     this.selectedMeteorite = meteorite;
+  }
+  selectPlanet(planet: string) {
+    this.selectedPlanet = planet;
+    this.sharedService.setSelectedPlanet(planet);
+  }
+
+  selectMeteorite(meteorite: string) {
+    this.selectedMeteorite = meteorite;
+    this.sharedService.setSelectedMeteorite(meteorite);
   }
 }

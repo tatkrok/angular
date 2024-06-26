@@ -14,6 +14,7 @@ import { BoxListComponent } from './box-list/box-list.component';
 import { PlanetComponent } from './planet/planet.component';
 import { SpaceComponent } from './space/space.component';
 import { MeteoriteComponent } from './meteorite/meteorite.component';
+import { SunComponent } from './sun/sun.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MeteoriteComponent } from './meteorite/meteorite.component';
     PlanetComponent,
     SpaceComponent,
     MeteoriteComponent,
+    SunComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],

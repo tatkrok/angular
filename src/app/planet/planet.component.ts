@@ -9,7 +9,7 @@ import { SharedService } from '../services/shared.service';
 export class PlanetComponent {
   @Input() planetName: string;
 
-  constructor(public sharedService: SharedService) { }
+  constructor(public sharedService: SharedService) {}
 
   planetClick(planetName: string): void {
     this.sharedService.setSelectedPlanet(planetName);
